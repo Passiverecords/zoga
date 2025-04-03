@@ -1,0 +1,319 @@
+.forescape {
+	--f-top-offset: 210px;
+  --swiper-theme-color: #25155b !important;
+}
+
+@media(min-width:1024px) {
+  .forescape .f-page-selection {
+    position: fixed;
+    background: #E0DBF0;
+    border-radius: 20px;
+    display: block;
+    padding: 12px 16px 12px 12px;
+  }
+}
+
+@media(max-width:1023px) {
+  .forescape .f-page-selection {
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    background: #E0DBF0;
+    border-radius: 20px 20px 0 0;
+    display: block;
+    padding: 12px 16px 12px 12px;
+    width: 100%;
+    left: 0;
+    z-index: 100;
+  }
+}
+
+.forescape .f-page-selection .f-btn-secondary {
+	display: none;
+}
+
+.forescape .f-card {
+	background: transparent;
+  border: none;
+}
+
+.forescape .f-highlight {
+    border: none;
+    background: none;
+    color: var(--colors--violet-200);
+}
+
+.forescape .f-p-4 {
+    padding: 0;
+}
+
+.forescape :is(.f-highlight>.f-h3) {
+   text-align: left !important;
+   font-family: var(--font-family--primary-family-medium);
+}
+
+.forescape .f-panel {
+	background: none;
+}
+
+.md\:f-col-span-2>div:first-child {
+    display: none;
+}
+
+.forescape .f-player-picker-button {
+    border-radius: 12px;
+    background: var(--colors--warm-600);
+		background: linear-gradient(90deg, var(--colors--warm-600) 0%, var(--colors--warm-500) 100%);
+}
+
+.forescape .f-player-picker-row {
+  padding-bottom: 6px;
+  border-bottom: 3px dotted;
+  border-color: var(--colors--violet-800);
+}
+
+.forescape .f-calendar-classic-slot,
+.forescape .f-calendar-chocolate-slot,
+.forescape .f-availability-hero-room-slot {
+  border-radius: 12px;
+  border-color: var(--colors--violet-200);
+}
+
+.forescape .f-calendar-classic-slot--selected,
+.forescape .f-calendar-chocolate-slot--selected,
+.forescape .f-availability-hero-room-slot--selected {
+	color: var(--colors--warm-200);
+	border-width: 3px;
+  border-color:var(--colors--warm-600);
+  background: none;
+}
+
+.forescape .f-calendar-chocolate-slot--unavailable,
+.forescape .f-availability-room-slot-disabled,
+.forescape .f-calendar-bg-disabled {
+	color: var(--colors--violet-600);
+  border: none;
+  border-radius: 8px;
+  background: var(--colors--violet-900);
+}
+
+.forescape .f-package-item-carousel .f-package-item-carousel-slide-title,
+.forescape .f-package-item-carousel .f-package-item-carousel-slide-error {
+	position: static;
+  text-align: left;
+  display: block;
+  padding: 0;
+  background: none;
+}
+
+.forescape .f-package-item-carousel .f-package-item-carousel-slide-title span {
+	display: block;
+	padding: 8px 0 0;
+  background: none;
+  text-align: left;
+  color: var(--colors--violet-200);
+  font-family: var(--font-family--primary-family-bold);
+}
+
+.forescape .f-package-item-carousel .f-package-item-carousel-slide-error div {
+  background: none;
+  color: linear-gradient(90deg, var(--colors--warm-600) 0%, var(--colors--warm-500) 100%);
+  font-family: var(--font-family--primary-family);
+  font-size: 16px;
+}
+
+
+.forescape button.f-btn-primary, 
+.forescape [type="button"].f-btn-primary,
+.forescape .f-modal-panel button.f-btn-primary, 
+.forescape .f-modal-panel [type="button"].f-btn-primary {
+	  background: var(--colors--warm-600);
+		background: linear-gradient(90deg, var(--colors--warm-600) 0%, var(--colors--warm-500) 100%);
+		border: none;
+    border-radius: 16px;
+    padding: 14.5px 16px;
+    font-size: 16px;
+}
+
+.forescape button.f-btn-secondary, 
+.forescape [type="button"].f-btn-secondary,
+.forescape .f-modal-panel button.f-btn-secondary, 
+.forescape .f-modal-panel [type="button"].f-btn-secondary {
+		border: 1px solid var(--colors--violet-200);
+    border-radius: 16px;
+    padding: 16px;
+    font-size: 16px;
+}
+
+.forescape .f-modal-panel {
+	padding: 40px;
+	border-radius: 16px;
+}
+
+.forescape .f-input {
+	border-radius: 8px;
+  border-color: var(--f-color-gray-300);
+  padding: 18.5px 12px;
+  font-size: 16px;
+}
+
+.forescape .f-panel--checkout-side-cart {
+	padding: 20px;
+  border-radius: 16px;
+  background-color: var(--colors--violet-900);
+}
+
+.forescape .f-checkout-side-cart-subtitle {
+	display: none;
+}
+
+.forescape .f-checkout-side-cart-item {
+	border-color: var(--f-color-gray-400);
+}
+
+.forescape .f-radiogroup-option {
+	padding: 16px;
+}
+
+.forescape .f-radiogroup-option--active {
+	box-shadow: none;
+}
+
+.forescape .f-radiogroup-option--checked .f-radiogroup-option-inset {
+	border-width: 3px;
+  border-color:var(--colors--warm-600);
+}
+
+/** For hero datepicker **/
+.forescape .f-datepicker {
+	box-shadow: none;
+}
+
+.forescape .f-datepicker-btn {
+	background: linear-gradient(90deg, var(--colors--warm-600) 0%, var(--colors--warm-500) 100%);
+  border: none;
+  border-radius: 16px;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.forescape .f-datepicker-input {
+	margin: 0 24px;
+  border-radius: 16px;
+}
+
+.forescape .f-availability-hero-room {
+	background-color: transparent;
+  border: none;
+}
+
+.f-availability-hero-room-heading {
+	display: none;
+}
+
+.forescape .f-room-slot-remaining {
+	font-size: 12px;
+  color: #25155B;
+}
+
+.forescape .f-cart--empty {
+	display: none;  
+}
+  
+.forescape .f-cart {
+	position: absolute;
+    top: 124px;
+    width: 210px;
+    left: auto;
+    right: 0px;
+    background-color: transparent;
+}
+
+.forescape .f-cart-content {
+    background: #E0DBF0;
+    border-radius: 20px;
+    display: block;
+    padding: 12px 16px 12px 12px;
+}
+  
+.forescape .f-cart-toggle-btn {
+	color: #25155B; 
+	padding: 0;
+	width: 100%;
+}
+
+.forescape .f-cart-toggle-btn-icon svg,
+.forescape .f-cart-toggle-btn-size {
+    display: none;
+}
+
+.forescape .f-cart-toggle-btn-size[data-cart-size="0"] {
+    padding-left: 8px;
+    position: static;
+    display: block;
+    color: transparent;
+}
+
+.forescape .f-cart-toggle-btn-size[data-cart-size="0"]::after {
+    margin-left: -8px;
+    content :"Mes réservations (0)";
+    color: #25155B; 
+    font-size: 17px;
+}
+
+.forescape .f-cart-toggle-btn-timeout {
+    opacity: 1;
+    font-size: 17px;
+}
+
+.forescape .f-cart-toggle-btn-timeout .time {
+    font-size: 13px;
+}
+
+.forescape .f-cart-toggle-btn-timeout::before {
+    content: "Mes réservations";
+}
+
+.forescape .f-cart-toggle-btn-amount {
+    color: #170A34;
+}
+
+.forescape .f-cart-toggle-btn div {
+    width: 100%;
+    text-align: left;
+    padding: 4px 0;
+}
+
+.forescape .f-cart-toggle-btn-timeout::before {
+    display: block;
+}
+
+.forescape .f-cart-toggle-btn-amount::before {
+    content: "Total — "
+}    
+
+.forescape .f-cart-toggle-btn {
+    display: flex;
+    flex-direction: column;
+    padding-left:24px;
+    background: url("https://cdn.prod.website-files.com/66fe882188f3854a1176011a/67daa5d16d37cdd4f636db98_Basket.svg");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.forescape .f-cart-toggle-btn div {
+    margin-left: 0 !important;
+    padding: 0 8px;
+}
+
+.forescape .f-cart-toggle-btn-timeout {
+    font-size: 15px;
+}
+
+.forescape .f-cart-toggle-btn-amount {
+	display: none;
+}
+
+.forescape .f-cart-toggle-btn-timeout .time {
+	display: none;  
+}
