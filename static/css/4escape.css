@@ -72,6 +72,11 @@
   border-color: var(--colors--violet-800);
 }
 
+
+.forescape .f-player-picker + div {
+    display: none;
+}
+
 .forescape .f-calendar-classic-slot,
 .forescape .f-calendar-chocolate-slot,
 .forescape .f-availability-hero-room-slot {
